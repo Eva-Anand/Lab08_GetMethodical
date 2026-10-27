@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class FavNumbers
+{
+    public static void main() {
+        Scanner in = new Scanner(System.in);
+
+        int favoriteInt = SafeInput.getInt(
+                in, "Enter your favorite integer");
+
+        double favoriteDouble = SafeInput.getDouble(
+                in, "Enter your favorite double");
+
+        System.out.println("Your favorite integer is: " + favoriteInt);
+        System.out.println("Your favorite double is: " + favoriteDouble);
+    }
+}
